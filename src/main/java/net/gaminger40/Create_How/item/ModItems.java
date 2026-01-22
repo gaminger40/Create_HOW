@@ -25,6 +25,13 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     //barrels end
 
+    //weapon components
+
+    public static final RegistryObject<Item> Pistol_Handle = Items.register("pistol_handle",
+            () -> new Item(new Item.Properties()));
+
+    //weapon components end
+
     public static void register(IEventBus eventBus){
         Items.register(eventBus);
     }
