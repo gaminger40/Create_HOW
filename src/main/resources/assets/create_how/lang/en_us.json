@@ -1,7 +1,10 @@
 {
-  "item.create_how.short_barrel": "Short barrel",
-  "item.create_how.pistol_barrel": "Pistol barrel",
-  "item.create_how.medium_barrel": "Medium barrel",
-  "item.create_how.long_barrel": "Long barrel",
-  "item.create_how.pistol_handle": "Pistol handle"
+  "item.create_how.short_barrel": "Short Barrel",
+  "item.create_how.pistol_barrel": "Pistol Barrel",
+  "item.create_how.medium_barrel": "Medium Barrel",
+  "item.create_how.long_barrel": "Long Barrel",
+  "item.create_how.pistol_handle": "Pistol Handle",
+  "item.create_how.iron_binding": "Iron Binding",
+
+  "creativetab.create_how_tab": "Create: History Of Warfare"
 }
