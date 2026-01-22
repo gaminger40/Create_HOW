@@ -80,6 +80,7 @@ public class Create_How
             event.accept(ModItems.Medium_Barrel);
             event.accept(ModItems.Long_Barrel);
             event.accept(ModItems.Pistol_Barrel);
+            event.accept(ModItems.Pistol_Handle);
         }
     }
 
