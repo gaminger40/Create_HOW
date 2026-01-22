@@ -1,6 +1,7 @@
 package net.gaminger40.Create_How;
 
 import com.mojang.logging.LogUtils;
+import net.gaminger40.Create_How.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -28,6 +29,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
+import javax.naming.directory.ModificationItem;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Create_How.MODID)
 public class Create_How
@@ -40,6 +43,8 @@ public class Create_How
     public Create_How(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -70,7 +75,12 @@ public class Create_How
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.Short_Barrel);
+            event.accept(ModItems.Medium_Barrel);
+            event.accept(ModItems.Long_Barrel);
+            event.accept(ModItems.Pistol_Barrel);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
