@@ -1,6 +1,7 @@
 package net.gaminger40.Create_How;
 
 import com.mojang.logging.LogUtils;
+import net.gaminger40.Create_How.block.ModBlocks;
 import net.gaminger40.Create_How.item.ModCreativeModeTabs;
 import net.gaminger40.Create_How.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -48,6 +49,8 @@ public class Create_How
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

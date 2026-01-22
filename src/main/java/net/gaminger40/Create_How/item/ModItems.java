@@ -35,6 +35,13 @@ public class ModItems {
 
     //weapon components end
 
+    //ingredients
+
+    public static final RegistryObject<Item> Tungsten_Ingot = Items.register("tungsten_ingot",
+            () -> new Item(new Item.Properties()));
+
+    //ingredients end
+
     public static void register(IEventBus eventBus){
         Items.register(eventBus);
     }

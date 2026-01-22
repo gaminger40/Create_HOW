@@ -6,5 +6,8 @@
   "item.create_how.pistol_handle": "Pistol Handle",
   "item.create_how.iron_binding": "Iron Binding",
 
+  "block.create_how.tungsten_ore": "Tungsten Ore",
+  "block.create_how.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+
   "creativetab.create_how_tab": "Create: History Of Warfare"
 }
