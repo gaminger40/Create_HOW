@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "create_how:tungsten_ingot"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:diamond"
+    }
+  ]
+}
