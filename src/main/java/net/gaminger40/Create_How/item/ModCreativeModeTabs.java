@@ -31,6 +31,7 @@ public class ModCreativeModeTabs {
                         //blocks
                         pOutput.accept(ModBlocks.Tungsten_Ore.get());
                         pOutput.accept((ModBlocks.Deepslate_Tungsten_Ore.get()));
+                        pOutput.accept(ModBlocks.Tungsten_Block.get());
                     })
                     .build());
 

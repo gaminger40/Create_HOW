@@ -36,6 +36,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> Deepslate_Tungsten_Ore = registerBlock("deepslate_tungsten_ore",
             () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.DEEPSLATE_DIAMOND_ORE)));
 
+    public static final RegistryObject<Block> Tungsten_Block = registerBlock("tungsten_block",
+            () -> new Block(BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.NETHERITE_BLOCK)));
+
     //tungsten end
 
     public static void register(IEventBus eventBus) {Blocks.register(eventBus);}
