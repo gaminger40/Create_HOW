@@ -1,6 +1,8 @@
 package net.gaminger40.Create_How;
 
 import com.mojang.logging.LogUtils;
+import net.gaminger40.Create_How.block.ModBlocks;
+import net.gaminger40.Create_How.item.ModCreativeModeTabs;
 import net.gaminger40.Create_How.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -44,7 +46,11 @@ public class Create_How
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -75,13 +81,7 @@ public class Create_How
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.Short_Barrel);
-            event.accept(ModItems.Medium_Barrel);
-            event.accept(ModItems.Long_Barrel);
-            event.accept(ModItems.Pistol_Barrel);
-            event.accept(ModItems.Pistol_Handle);
-        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

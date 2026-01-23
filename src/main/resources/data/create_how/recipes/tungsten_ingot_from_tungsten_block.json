@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create_how:tungsten_block"
+    }
+  ],
+  "result": {
+    "item": "create_how:tungsten_ingot",
+    "count": 9
+  }
+}

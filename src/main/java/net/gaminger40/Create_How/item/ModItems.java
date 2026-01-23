@@ -30,7 +30,17 @@ public class ModItems {
     public static final RegistryObject<Item> Pistol_Handle = Items.register("pistol_handle",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> Iron_Binding = Items.register("iron_binding",
+            () -> new Item(new Item.Properties()));
+
     //weapon components end
+
+    //ingredients
+
+    public static final RegistryObject<Item> Tungsten_Ingot = Items.register("tungsten_ingot",
+            () -> new Item(new Item.Properties()));
+
+    //ingredients end
 
     public static void register(IEventBus eventBus){
         Items.register(eventBus);
